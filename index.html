@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(136, 133, 133);
+        }
+        .container{
+            width: 900px;
+            height: 710px;
+            /* border: 2px solid black; */
+            margin: 30px auto;
+            background-color: rgb(97, 99, 99);
+            border-radius: 20px;
+            opacity: 0.8;
+        }
+
+        .box{
+            width: 150px;
+            height: 500px;
+            /* border: 2px solid black; */
+            margin-left: 100px;
+            position: relative;
+            top: 40px;
+            background-color: aliceblue;
+            border-radius: 20px;
+        }
+        input{
+            display: block;
+            margin-top: 10px;
+            margin-left: 70px;
+            position: relative;
+            top: 15px;
+        }
+        h3{
+            text-align: center;
+            margin-top: 15px;
+        }
+        #box1{
+            width: 500px;
+            height: 500px;
+            /* border: 2px solid black; */
+            display: inline-block;
+           position: relative;
+           left: 200px;
+           top: -480px;  
+           background-color: rgb(253, 250, 247);
+           border-radius: 30px;
+        }
+
+        #hero1:checked~#box1{
+            background-image: url(https://i.pinimg.com/550x/5d/d2/c8/5dd2c8f82ef46e0db3fe07a6e3285c2f.jpg);
+        }
+
+        #hero2:checked~#box1{
+            background-image: url(https://i.pinimg.com/550x/97/bf/27/97bf27becd0df4ff387b882572925416.jpg);
+            
+        }
+
+        #hero3:checked~#box1{
+            background-image: url(https://img.etimg.com/thumb/width-640,height-480,imgsize-111746,resizemode-75,msid-91981734/magazines/panache/marvel-fans-note-changes-in-india-release-date-of-thor-love-and-thunder-movie-will-now-premiere-on-july-7/the-film-will-be-released-in-india-a-day-earlier-than-previously-planned-.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #hero4:checked~#box1{
+            background-image: url(https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/a22e9170-95b2-46f2-8291-3500a60af331/marvel-studios-is-reportedly-finally-developing-a-solo-hulk-movie.jpg);
+            background-repeat: no-repeat;
+            background-size: 900px;
+            background-position: center;
+        }
+
+        #hero5:checked~#box1{
+            background-image: url(https://images.immediate.co.uk/production/volatile/sites/3/2019/07/avengers-8bb66cd.jpg?quality=90&resize=727,485);
+            background-repeat: no-repeat;
+            background-size: 800px;
+            background-position: center;
+        }
+
+        #hero6:checked~#box1{
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/495/942/459/natasha-romanoff-scarlett-johansson-avengers-infinity-war-5k-wallpaper-preview.jpg);
+            background-position: center;
+        }
+
+        #hero7:checked~#box1{
+            background-image: url(https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/0237edb89e898e4fc108da4712a01e41.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;position: relative; top: 30px;color: rgb(227, 225, 238);">Avengers</h1>
+    <div class="box">
+    <input type="radio" id="hero1" name="Avengers" ><h3>Iron-man</h3>
+    <input type="radio" id="hero2" name="Avengers" ><h3>Captain America</h3>
+    <input type="radio" id="hero3" name="Avengers" ><h3>Thor</h3>
+    <input type="radio" id="hero4" name="Avengers" ><h3>Hulk</h3>
+    <input type="radio" id="hero5" name="Avengers" ><h3>Hawkeye</h3>
+    <input type="radio" id="hero6" name="Avengers" ><h3>Natasha</h3>
+    <input type="radio" id="hero7" name="Avengers"><h3>All</h3>
+    <div id="box1"></div>
+</div> 
+</div>
+</body>
+</html>
